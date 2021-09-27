@@ -8,23 +8,28 @@
 	\setbeamercovered{transparent}
 }
 % Redefine beamer colors
+\definecolor{UoNblue1}{RGB}{0,155,189}
+\definecolor{UoNblue2}{RGB}{0,125,168}
+\definecolor{UoNblue3}{RGB}{0,86,151}
+\definecolor{UoNblue4}{RGB}{27,42,107}
+\definecolor{UoNblue5}{RGB}{25,26,79}
 % Captions and titles
 \setbeamertemplate{caption}{\raggedright\insertcaption} 
-\setbeamercolor{frametitle}{fg=cyan!90!black}
-\setbeamercolor{title}{bg=cyan!90!black}
+\setbeamercolor{frametitle}{fg=UoNblue3}
+\setbeamercolor{title}{bg=UoNblue2}
 
-\setbeamercolor{palette primary}{fg=white, bg=cyan!70!black}
-\setbeamercolor{palette secondary}{fg=white, bg=cyan!50!black}
-\setbeamercolor{palette tertiary}{fg=white, bg=cyan!90!black}
+\setbeamercolor{palette primary}{fg=white, bg=UoNblue3}
+\setbeamercolor{palette secondary}{fg=white, bg=UoNblue4}
+\setbeamercolor{palette tertiary}{fg=white, bg=UoNblue5}
 % Outline slide
 \setbeamertemplate{section in toc}[circle]
 \setbeamerfont{section number projected}{family=\rmfamily,series=\bfseries,size=\normalsize}
-\setbeamercolor{section number projected}{bg=cyan!90!black,fg=white}
+\setbeamercolor{section number projected}{bg=UoNblue5,fg=white}
 % Itemize list
 \setbeamertemplate{itemize item}[circle]
 \setbeamertemplate{itemize subitem}[circle]
-\setbeamercolor{itemize item}{fg=cyan!70!black}
-\setbeamercolor{itemize subitemitem}{fg=cyan!90!black}
+\setbeamercolor{itemize item}{fg=UoNblue4}
+\setbeamercolor{itemize subitemitem}{fg=UoNblue5}
 % Title box
 \setbeamertemplate{frametitle}{%
 	\nointerlineskip%
@@ -84,12 +89,13 @@
 \title[Short title] % (optional, use only with long paper titles)
 {Very very very very very very very very very very long title}
 \author[A. Kadochnikova]{A. Kadochnikova\inst{1}}
-\institute[ACSE,TUoS]{\inst{1}
-	Department of Automatic Control and Systems Engineering\\
-	The University of Sheffield}
+\institute[AES,UoN]{\inst{1}
+	Division of Agricultural and Environmental Sciences\\
+	School of Biosciences\\
+	The University of Nottingham}
 \date{date}
-
-\pgfdeclareimage[height=1cm]{university-logo}{UoSarms.pdf}
+\titlegraphic{\vspace*{0.7cm}\includegraphics[height=0.85cm]{UoNlogoFC.png}\hspace*{10.2cm}}
+\pgfdeclareimage[height=1cm]{university-logo}{UoNarms}
 \logo{\pgfuseimage{university-logo}}
 \begin{document}
 \begin{frame}
