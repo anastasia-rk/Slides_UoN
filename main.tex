@@ -89,14 +89,22 @@
 \title[Short title] % (optional, use only with long paper titles)
 {Very very very very very very very very very very long title}
 \author[A. Kadochnikova]{A. Kadochnikova\inst{1}}
-\institute[AES,UoN]{\inst{1}
-	Division of Agricultural and Environmental Sciences\\
-	School of Biosciences\\
-	The University of Nottingham}
+\institute[SoMS,UoN]{\inst{1}
+	School of Mathematical Sciences\\
+	University of Nottingham}
 \date{date}
-\titlegraphic{\vspace*{0.7cm}\includegraphics[height=0.85cm]{UoNlogoFC.png}\hspace*{10.2cm}}
-\pgfdeclareimage[height=1cm]{university-logo}{UoNarms}
-\logo{\pgfuseimage{university-logo}}
+%\titlegraphic{\vspace*{0.7cm}\includegraphics[height=0.85cm]{UoNlogoFC.png}\hspace*{10.2cm}}
+%\pgfdeclareimage[height=0.7cm]{university-logo}{UoNlogoFC}
+%\logo{\pgfuseimage{university-logo}}
+%% put logo into bottom left corner
+\logo{
+\begin{tikzpicture}[overlay,remember picture]
+\node[right=0.05cm] at (current page.212){
+    \includegraphics[height=0.7cm]{UoNlogoFC}
+};
+\end{tikzpicture}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% begin the slides
 \begin{document}
 \begin{frame}
 	\titlepage
